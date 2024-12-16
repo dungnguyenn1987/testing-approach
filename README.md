@@ -94,3 +94,25 @@ Testing large data responses with the live product catalog API may impact perfor
 In each of these scenarios, mocking the third-party API is essential to simulate various conditions and behaviours without relying on live production environments. Mocking enables you to conduct thorough and controlled tests, ensuring that your application behaves as expected under different scenarios and conditions while minimising risks and dependencies on external services.
 
 </details>
+
+# Shopping Cart Test
+- Add To Cart: check product info and observe price in case of quantity changed
+  - Single Product (quantity = 1) Add To Cart
+  - Single Product (quantity > 1) Add To Cart
+  - Multiple Products Add To Cart
+  - The added products will be removed in case of unavailable
+- Remove From Cart: observe price in case of quantity changed
+  - Reduce quantity = 0
+  - Reduce quantity = quantity - 1
+  - Use remove button
+- Checkout: with valid and invalid payment details and checkout details (customer, shipping address..)
+  - Guest Checkout
+  - Registered Checkout 
+- Gift Coupon
+  - One-Time Discount Coupon
+  - One-Time Discount Coupon Duplicacy (previously use)
+  - Coupon Invalid Code
+  - Automatic discount
+- Payment options: the payment accepted by bussiness site (bank, electric wallet, paypal, stripe..) for both valid and invalid payment details and observe the accout balance
+- Checkout status: approved, paid, shipping status..
+- APIs test make sure validation perform both front end and back end
