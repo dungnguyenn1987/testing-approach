@@ -96,6 +96,8 @@ In each of these scenarios, mocking the third-party API is essential to simulate
 </details>
 
 # Shopping Cart Test
+<details>
+  
 - Add To Cart: check product info and observe price in case of quantity changed
   - Single Product (quantity = 1) Add To Cart
   - Single Product (quantity > 1) Add To Cart
@@ -116,3 +118,5 @@ In each of these scenarios, mocking the third-party API is essential to simulate
 - Payment options: the payment accepted by bussiness site (bank, electric wallet, paypal, stripe..) for both valid and invalid payment details and observe the accout balance
 - Checkout status: approved, paid, shipping status..
 - APIs test make sure validation perform both front end and back end
+
+</details>
